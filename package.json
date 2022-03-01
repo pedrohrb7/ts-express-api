@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p .",
+    "start": "NODE_PATH=./build node build/index.js",
     "dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/app.ts",
     "test": "NODE_ENV=test mocha --check-leaks -r tsconfig-paths/register -r ts-node/register \"test/**/*.spec.ts\""
   },
